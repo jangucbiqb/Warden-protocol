@@ -14,20 +14,14 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
 ```
 
-Node Installation
-
-Node Name
-
-Your Node Name
-Port prefix
-
-273
-# Download binary
+**Download binary**
+```
 cd && wget https://github.com/warden-protocol/wardenprotocol/releases/download/v0.5.2/wardend_Linux_x86_64.zip
 unzip wardend_Linux_x86_64.zip
 rm -rf wardend_Linux_x86_64.zip
 chmod +x wardend
 sudo mv wardend $HOME/go/bin/warndend
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.warden/cosmovisor/genesis/bin
