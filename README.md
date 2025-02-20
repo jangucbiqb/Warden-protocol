@@ -23,9 +23,11 @@ chmod +x wardend
 sudo mv wardend $HOME/go/bin/warndend
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.warden/cosmovisor/genesis/bin
 ln -s $HOME/.warden/cosmovisor/genesis $HOME/.warden/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which wardend) $HOME/.warden/cosmovisor/genesis/bin
