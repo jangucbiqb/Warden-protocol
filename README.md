@@ -29,8 +29,10 @@ mkdir -p $HOME/.warden/cosmovisor/genesis/bin
 ln -s $HOME/.warden/cosmovisor/genesis $HOME/.warden/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which wardend) $HOME/.warden/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 wardend config set client chain-id chiado_10010-1
