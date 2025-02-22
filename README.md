@@ -34,10 +34,12 @@ ln -s $HOME/.warden/cosmovisor/genesis $HOME/.warden/cosmovisor/current -f
 cp $(which wardend) $HOME/.warden/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 wardend config set client chain-id chiado_10010-1
 wardend config set client keyring-backend test
 wardend config set client node tcp://localhost:27357
+```
 
 # Initialize the node
 wardend init "Your Node Name" --chain-id chiado_10010-1
