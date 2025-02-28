@@ -70,8 +70,10 @@ sed -i \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.warden/config/app.toml
 ```
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.warden/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:27317%; s%:8080%:27380%; s%:9090%:27390%; s%:9091%:27391%; s%:8545%:27345%; s%:8546%:27346%; s%:6065%:27365%" $HOME/.warden/config/app.toml
