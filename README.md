@@ -114,10 +114,12 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable warden.service
 
-# Start the service and check the logs
+**Start the service and check the logs**
+```
 sudo systemctl start warden.service
 sudo journalctl -u warden.service -f --no-hostname -o cat
 Secure Server Setup (Optional)
+```
 
 # generate ssh keys, if you don't have them already, DO IT ON YOUR LOCAL MACHINE
 ssh-keygen -t rsa
